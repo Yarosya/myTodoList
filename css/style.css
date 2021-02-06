@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:white;
+    font-family: 'Lemonada', cursive;
+}
+.container{
+    max-width: 800px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 50px -50px 0px -17px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 50px -50px 0px -17px rgba(0,0,0,0);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 25px;
+   
+}
+.title-todo{
+    font-size: 46px;
+}
+.form-todo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.input-todo,
+.btn-todo{
+    outline: none;
+    border: none;
+   
+    background-color:white;
+}
+.input-todo{
+    width: 300px;
+    padding: 15px;
+}
+.btn-todo{
+    font-size: 20px;
+    padding: 11px;
+    text-align: center;
+    color: #330867;
+    transition: all 0.3s;
+}
+.btn-todo:hover{
+    color: white;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.list-todo{
+    display: flex;
+    justify-content: center;
+}
+.content-todo{
+    margin: 10px;
+    background:white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.list-todo li{
+    flex: 1;
+    display: flex;
+}
+.item-todo{
+    padding: 0 15px 0 0;
+}
+.task-todo{
+    width: 80%;
+    list-style: none;
+}
+.removeBtn-todo, .completeBtn-todo{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    box-shadow: 0px 10px 13px -7px #000000, 50px -50px 0px -17px rgba(0,0,0,0);
+    font-family: 'Lemonada', cursive;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    width: 50px;
+    height: 55px;
+    font-size: 30px;
+}
+ .completeBtn-todo:hover{
+     background:green;
+ }
+ .removeBtn-todo:hover{
+    background:red; 
+ }
+
+.list-todo i{
+    pointer-events: none;
+ }
+ .checkTask{
+     text-decoration: line-through;
+     background-color:aqua;
+ }
+.filter{
+    margin: 10px;
+   
+}
+ .filter-todo{
+     border: none;
+     outline: none;
+     color: black;
+     font-family: 'Lemonada', cursive;
+     padding: 8px;
+     cursor: pointer;
+ }
+
